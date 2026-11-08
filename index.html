@@ -8,7 +8,6 @@
   <title>A Village of Prayer for Baby Mathew</title>
   <link rel="stylesheet" href="style.css">
   <script src="config.js" defer></script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.0/dist/umd/supabase.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
@@ -125,26 +124,12 @@
           <div class="participants">
             <div id="participants" aria-live="polite"></div>
           </div>
-          <div class="auth-section">
-            <form id="auth-form">
-              <p class="small-label">SIGN IN TO JOIN</p>
-              <p class="auth-copy">We’ll email you a sign-in link. Your email won’t appear on the page or calendar.</p>
-              <label for="email">Email address</label>
-              <input id="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com">
-              <button id="send-link" class="button outline full-width" type="submit" disabled>Send sign-in link</button>
-            </form>
-            <div id="signed-in" hidden>
-              <p class="auth-copy">Signed in as <strong id="account-email"></strong></p>
-              <button id="sign-out" class="text-button" type="button">Sign out</button>
-            </div>
-            <p id="auth-message" class="message" role="status" aria-live="polite"></p>
-          </div>
           <form id="signup-form">
             <label for="prayer-name">Your name and/or local church</label>
             <input id="prayer-name" name="name" maxlength="100" required autocomplete="name">
             <label for="additional-name">First name of a friend or family member to pray for (optional)</label>
             <input id="additional-name" name="additionalName" maxlength="100" placeholder="Someone who doesn’t yet know Jesus">
-            <p class="privacy-note">Names you share will be visible to everyone on this page. The optional prayer name will not appear in the subscribed calendar. Sign in to add or remove your signup.</p>
+            <p class="privacy-note">Names you share are public on this page. The optional prayer name will not appear in the subscribed calendar. You can remove your signup using this same browser; clearing its data will remove that ability.</p>
             <button class="button primary full-width" type="submit">I’m joining in fasting &amp; prayer 🤍</button>
             <p id="form-message" class="message" role="status" aria-live="polite"></p>
           </form>
