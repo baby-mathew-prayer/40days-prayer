@@ -1,0 +1,2 @@
+[functions.prayer-calendar]
+verify_jwt = false
